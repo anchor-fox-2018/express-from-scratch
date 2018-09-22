@@ -1,9 +1,11 @@
-const express = require('express');
-let app = express();
+// Bring in our dependencies
+const app = require('express')();
+const routes = require('./routes');
 
-app.get('/', function(req, res) {
-    res.send('Hi, how are thou?')
+//  Connect all our routes to our application
+app.use('/', routes);
+
+// Turn on that server!
+app.listen(3000, () => {
+    console.log('App listening on port 3000');
 });
-
-//starting the server
-app.listen(8000)
