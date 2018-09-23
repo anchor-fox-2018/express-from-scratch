@@ -3,7 +3,7 @@ const router = express.Router();
 
 // Get home page
 router.get('/', function (request, response) {
-    response.send("I love hacktiv8");
+    response.render("index", {title: "Hello not so express"});
 });
 
 module.exports = router;
