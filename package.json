@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/anchor-fox-2018/express-from-scratch#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "pg": "^7.4.3",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.38.1"
   }
 }
